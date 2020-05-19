@@ -79,6 +79,12 @@ form {
     animation-name: msgBox;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    transition: background 3s, color 1.5s;
+}
+
+.msg:hover {
+    background: lightsalmon;
+    color: #3B404E;
 }
 
 @keyframes msgBox {
