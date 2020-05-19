@@ -1,6 +1,5 @@
 let jsonObj = '["This is message number one!", "This is another message!", "I love cats!", ' +
-    '"Could probably die for them", "How do people come up with messages...?", ' +
-    '"Just trying to fill the page do not mind me...", "what happens if I add one more?"]';
+    '"Could probably die for them", "How do people come up with messages...?"]';
 let msgList = JSON.parse(jsonObj);
 
 function drawList() {
@@ -26,6 +25,7 @@ function clearList() {
 
 function addMsg() {
     let newMsg = document.getElementById("mainText").value;
+    if (newMsg === "") {return;}
     msgList.push(newMsg);
     let newMsgBox = document.createElement("div");   // Create a <button> element
     newMsgBox.innerHTML = newMsg;
