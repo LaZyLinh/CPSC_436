@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #202020;
+}
+li {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+form {
+    position: absolute;
+    top: 70%;
+    bottom: 10%;
+    left: 15%;
+    right: 17%;
+    min-width: 300px;
+}
+ textarea {
+     background-color: gainsboro;
+     position: relative;
+     height: 100%;
+     width: 100%
+ }
+.navbar {
+    position: fixed;
+    background-color: #73757C;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*common attributes, update once for all buttons*/
+.buttons {
+    background: gainsboro;
+    border-radius: 10px;
+    border-color: black;
+    text-align-all: center;
+    color: black;
+    font-size: 12px;
+}
+
+.msg {
+    position: relative;
+    background: #3B404E;
+    padding: 10px 10px 10px 30px;
+    margin: 20px;
+    left: 5%;
+    width: 75%;
+    color: #f2f2f2;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border: 3px dotted lightsteelblue;
+    animation-name: msgBox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes msgBox {
+    0% {border: 3px dotted lightsteelblue;}
+    40% {border: 3px dot-dot-dash lightskyblue;}
+    60% {border: 3px dot-dash cornflowerblue;}
+    80% {border: 3px dotted lightpink;}
+    100% {border: 3px dot-dot-dash skyblue;}
+}
+
+#topPanel {
+    position: absolute;
+    top:60px;
+    bottom: 30%;
+    left: 15%;
+    right: 15%;
+    overflow-y: auto;
+    z-index: 0;
+}
+
+#deleteBtn {
+    position: absolute;
+    bottom: 40%;
+    left: 2%;
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    font-size: 15pt;
+    font-family: "Apple Braille";
+}
+
+h1 {
+    text-align-all: center;
+}

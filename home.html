@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+<script src="main.js"></script>
+<ul class="navbar">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+</ul>
+
+<section id="topPanel">
+    <script>drawList()</script>
+</section>
+<form id="msg">
+    <label style="color: #f2f2f2">
+        Message:
+        <br />
+        <textarea id="mainText" rows="10" cols="20" form="msg"></textarea>
+    </label>
+    <br />
+    <input type="button" value="Add" class="buttons" onclick="addMsg();eraseText()"/>
+    <input type="button" value="Clear" class="buttons" onclick="eraseText();">
+</form>
+<button class="msg" id="deleteBtn" onclick="clearList()">Clear All</button>
+
+</body></html>
